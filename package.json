@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "node-fetch": "^3.2.10",
     "slugify": "^1.6.5"
   }
