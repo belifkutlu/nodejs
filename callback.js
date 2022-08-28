@@ -56,17 +56,17 @@ import axios from "axios";
 // })(); //anonim fonksiyon
 
 // (async () => {
-//   const users = await fetch(
+//   const users = await ( await fetch(
 //     "https://jsonplaceholder.typicode.com/users"
-//   ).json();
+//   )).json()
 
-//   const post1 = await fetch(
+//   const post1 = await (await fetch(
 //     "https://jsonplaceholder.typicode.com/post/1"
-//   ).json();
+//   )).json()
 
-//   const post2 = await fetch(
+//   const post2 = await (await fetch(
 //     "https://jsonplaceholder.typicode.com/post/2"
-//   ).json();
+//   )).json()
 
 //   console.log("users", users);
 //   console.log("post1", post1);
@@ -143,6 +143,6 @@ const getPost = (post_id) => {
 //   }
 // })();
 
-Promise.all([getUsers(), getPost(1)])
+Promise.all([getUsers(1), getPost(1)])
   .then(console.log)
   .catch(console.log());

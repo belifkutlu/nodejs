@@ -10,7 +10,7 @@ const users = [
 
 /*
 push  ---> array sonuna yeni bir eleman ekler
-map  ---> verdigimiz islemi arrayin butun elemanlarina uygulayarak yeni array dondurur
+map  ---> verdigimiz islemi arrayin butun elemanlarina uygulayarak yeni array dondurur. listelemek istersek
 find  ---> verdigimiz kosullarla array icinde arama yapar
 filter  ---> verdigimiz kosula gore filtreleme yaparak o filtrelediklerinden yeni array olusturuyor
 some  ---> arrayin icindeki elemanlardan herhangi biri verdigimiz kosula uyuyorsa true uymuyorsa false doner
@@ -19,11 +19,13 @@ includes ---> array icinde geciyor mu gecmiyor mu onu kontrol etmemizi sagliyor.
  */
 
 /*** push ***/
+// herhangi bir veri turunde string obje array eklenebilir
 // users.push("ayse");
 // users.push("fatma");
 // console.log(users);
 
 /*** normalde array donerken ***/
+//forda baslangic ve bitis degeri belortmemiz lazim mapte bunu gerek yok butun elemanlari doner
 // for (let index = 0; index < users.length; index++) {
 //   const element = users[index];
 //   // console.log(element);
@@ -31,6 +33,7 @@ includes ---> array icinde geciyor mu gecmiyor mu onu kontrol etmemizi sagliyor.
 // }
 
 /*** map ***/
+// dondugu eleman ne ise onu kullanmamiza imkan saglar
 // users.map((item) => {
 //   console.log(item.name);
 // });
